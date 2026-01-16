@@ -7,9 +7,9 @@
 ![Focus](https://img.shields.io/badge/Focus-Cloud%20Computing%20%26%20AI-blueviolet)
 
 **Authors:**  
+- Anurag Surve  
 - Vishal Fulsundar  
 - Omoniyi Israel  
-- Anurag Surve  
 
 **Domain:** Cloud Computing · AI Systems · Sports Analytics  
 **Course:** Cloud Computing (Fall 2025)  
