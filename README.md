@@ -1,17 +1,17 @@
-# 🏀 NBA Intelligent Chatbot (AWS Serverless)
+# 🏀 NBA Intelligent Chatbot (AWS & API-Sports)
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue)
-![AWS](https://img.shields.io/badge/AWS-Serverless-orange)
+![AWS](https://img.shields.io/badge/AWS-Cloud-orange)
 ![Bedrock](https://img.shields.io/badge/AWS-Bedrock-purple)
-![Status](https://img.shields.io/badge/Project-Completed-success)
+![Status](https://img.shields.io/badge/Project-Inactive-lightgrey)
 ![Focus](https://img.shields.io/badge/Focus-Cloud%20Computing%20%26%20AI-blueviolet)
 
 **Authors:**  
-- Anurag Surve
 - Vishal Fulsundar  
-- Omoniyi Israel    
+- Omoniyi Israel  
+- Anurag Surve  
 
-**Domain:** Cloud Computing · Serverless Architecture · AI Systems · Sports Analytics  
+**Domain:** Cloud Computing · AI Systems · Sports Analytics  
 **Course:** Cloud Computing (Fall 2025)  
 **University:** George Washington University  
 
@@ -19,39 +19,37 @@
 
 ## 🔍 Project Snapshot (TL;DR)
 
-This project implements an **intelligent NBA chatbot** that answers **natural-language basketball questions** using a **fully serverless AWS architecture**.
+This project implements an **intelligent NBA chatbot** designed to answer **natural-language basketball questions** using **AWS cloud services**, **AWS Bedrock**, and **live NBA data from API-Sports**.
 
-Users can ask questions about **players, teams, standings, games, and rosters**, and receive **real-time, human-like responses** powered by **AWS Bedrock** and **live NBA data from API-Sports**.
-
-The project emphasizes **end-to-end cloud system design**, including API Gateway routing, Lambda orchestration, external API integration, and LLM-based intent understanding.
+The system was built to demonstrate **cloud-based AI system design**, including API Gateway routing, Lambda-based processing, external API integration, and LLM-driven intent understanding.  
+The application is **currently inactive** but fully functional from a system and architectural standpoint.
 
 ---
 
 ## 🎯 Objectives
 
-- Build a cloud-native NBA chatbot using AWS serverless services  
+- Design an intelligent NBA chatbot using AWS cloud services  
 - Support natural-language NBA queries  
-- Fetch real-time NBA statistics  
-- Use AWS Bedrock to understand intent and generate responses  
-- Demonstrate a scalable and modular serverless architecture  
+- Retrieve real-time NBA statistics from an external API  
+- Use AWS Bedrock for intent understanding and response generation  
+- Demonstrate modular cloud application architecture  
 
 ---
 
 ## 🧠 System Overview
 
-The chatbot follows a multi-service serverless workflow:
+The chatbot follows a cloud-based workflow:
 
 1. Users interact with a Streamlit web application  
-2. Requests are routed through AWS API Gateway  
-3. A Chat Lambda uses AWS Bedrock to:
+2. Requests are sent to AWS API Gateway  
+3. A Chat processing component uses AWS Bedrock to:
    - Understand user intent  
    - Extract entities such as players, teams, and seasons  
-4. A Stats Lambda fetches live NBA data from API-Sports  
-5. Data is normalized and returned to the Chat Lambda  
-6. Bedrock generates a natural-language response  
-7. The final answer is displayed in the chat interface  
+4. A statistics processing component retrieves NBA data from API-Sports  
+5. Retrieved data is normalized and combined with AI-generated explanations  
+6. The final response is returned to the frontend interface  
 
-This design cleanly separates **UI**, **reasoning**, and **data retrieval**.
+The design separates **user interaction**, **AI reasoning**, and **data retrieval** for clarity and maintainability.
 
 ---
 
@@ -59,14 +57,13 @@ This design cleanly separates **UI**, **reasoning**, and **data retrieval**.
 
 **Core Components:**
 - Streamlit – Chat-based frontend UI  
-- AWS API Gateway – HTTP routing layer  
-- AWS Lambda (Chat) – Intent detection and response generation  
-- AWS Lambda (Stats) – NBA data retrieval and normalization  
+- AWS API Gateway – Request routing  
+- AWS Lambda – Backend processing logic  
 - AWS Bedrock – Large Language Model (Claude 3 Haiku)  
 - API-Sports NBA API – Live basketball statistics  
 - Lambda Layer – Shared dependencies  
 
-The architecture is fully serverless, scalable, and cost-efficient.
+The architecture emphasizes **scalability, modularity, and clarity**, rather than continuous deployment.
 
 ---
 
@@ -101,8 +98,8 @@ All routes are exposed under the `/nba` base path:
 - Streamlit  
 
 **Cloud & AI**
-- AWS Lambda  
 - AWS API Gateway  
+- AWS Lambda  
 - AWS Bedrock (Claude 3 Haiku)  
 
 **Data & APIs**
